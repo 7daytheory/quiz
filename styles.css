@@ -1,6 +1,6 @@
 :root {
     background-color: #ecf5ff;
-    font-size: 62.5%;
+    font-size: 90%;
   }
   
   * {
@@ -19,7 +19,7 @@
   }
   
   h1 {
-    font-size: 5.4rem;
+    font-size: 6rem;
     color: #56a5eb;
     margin-bottom: 5rem;
   }
@@ -30,7 +30,7 @@
   }
   
   h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
     font-weight: 700;
   }
@@ -43,6 +43,7 @@
   /* UTILITIES */
   
   .container {
+    overflow: hidden;
     padding: 2rem;
     width: 100vw;
     height: 100vh;
@@ -81,9 +82,11 @@
   
   /* BUTTONS */
   .btn {
-    font-size: 1.8rem;
+    font-size: 3rem;
     padding: 1rem 0;
-    width: 20rem;
+    width: 30rem;
+    max-width: 90%;
+    min-width: 75%;
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
