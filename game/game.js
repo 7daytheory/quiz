@@ -14,11 +14,17 @@ let availableQuestions = [];
 
 let questions = [];
 
-fetch("questions.json").then(res => {
+fetch("../questions.json")
+.then(res => {
     return res.json();
 })
 .then(loadedQuestions => {
     console.log(loadedQuestions);
+    questions = loadedQuestions;
+    startGame();
+})
+.catch(err => {
+    console.log(err);
 })
 
 const CORRECT_BONUS = 10;
@@ -63,7 +69,6 @@ getNewQuestion = () => {
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
         if (!acceptingAnswers) return;
-        console.log(e.target);
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -71,7 +76,7 @@ choices.forEach(choice => {
 		
 		let classToApply;
 		
-		if(currentQuestion.answer === selectedAnswer) {
+		if(currentQuestion.answer == selectedAnswer) {
         classToApply = "correct";
 		} else {
 		classToApply = "incorrect";
@@ -95,5 +100,3 @@ incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 }
-
-startGame();
