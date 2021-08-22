@@ -12,11 +12,14 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-fetch("questions.json").then(res => {
-    console.log(res);
-})
-
 let questions = [];
+
+fetch("questions.json").then(res => {
+    return res.json();
+})
+.then(loadedQuestions => {
+    console.log(loadedQuestions);
+})
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 9;
