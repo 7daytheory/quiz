@@ -12,80 +12,11 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
-        question: "What is the name of the all-time rushing leader for the Kansas City Chiefs?",
-        choice1: "Spencer Ware",
-        choice2: "Priest Holmes",
-        choice3: "Jamaal Charles",
-        choice4: "Larry Johnson",
-        answer: "3"
-    },
-    {
-        question: "In which Super Bowl did the Chiefs make their first appearance?",
-        choice1: "Super Bowl IV",
-        choice2: "Super Bowl LIV",
-        choice3: "Super Bowl I",
-        choice4: "Super Bowl XIX",
-        answer: "3"
-    },
-    {
-        question: "What is the name of the 5-time Pro Bowl safety who played for the Chiefs from 2010 to 2018?",
-        choice1: "Eric Berry",
-        choice2: "Lloyd Burruss",
-        choice3: "Tyrann Mathieu",
-        choice4: " Johnny Robinson",
-        answer: "1"
-    },
-    {
-        question: "Who was the first head coach of the Kansas City Chiefs?",
-        choice1: "Lamar Hunt",
-        choice2: "Hank Stram",
-        choice3: "Marv Levy",
-        choice4: "Paul Wiggin",
-        answer: "2"
-    },
-    {
-        question: "As of 2019, what is the name of the stadium in which the Kansas City Chiefs play?",
-        choice1: "Arrowhead Stadium",
-        choice2: "CenturyLink Field",
-        choice3: "Municipal Stadium",
-        choice4: "Cotton Bowl",
-        answer: "1"
-    },
-    {
-        question: "Which Chiefs Hall of Fame linebacker played for 11 seasons, had 126.5 sacks, and was selected for 9 Pro Bowls?",
-        choice1: "Derrick Johnson",
-        choice2: "Anthony Davis",
-        choice3: "Willie Lanier",
-        choice4: "Derrick Thomas",
-        answer: "2"
-    },
-    {
-        question: "Who holds the team record for most receiving yards all-time for the Kansas City Chiefs?",
-        choice1: "Jamaal Charles",
-        choice2: "Otis Taylor",
-        choice3: "Tony Gonzalez",
-        choice4: "Tyreek Hill",
-        answer: "3"
-    },
-    {
-        question: "Which Hall of Fame quarterback spent most of his career with the San Francisco 49ers, but spent his last two seasons in Kansas City, taking the team to the playoffs in both 1993 and 1994?",
-        choice1: "Alex Smith",
-        choice2: "Steve Young",
-        choice3: "Joe Montana",
-        choice4: "Matt Cassel",
-        answer: "3"
-    },
-    {
-        question: "Who is the all-time passing yards leader for the Kansas City Chiefs?",
-        choice1: "Len Dawson",
-        choice2: "Patrick Mahomes",
-        choice3: "Joe Montana",
-        choice4: "Alex Smith",
-        answer: "1"
-    }
-];
+fetch("questions.json").then(res => {
+    console.log(res);
+})
+
+let questions = [];
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 9;
