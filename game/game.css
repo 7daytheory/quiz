@@ -59,3 +59,36 @@
   height: 3.4rem;
   background: #56a5eb;
 }
+
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.5rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.quit {
+  bottom: 10px;
+  font-size: 2rem;
+  position: absolute;
+  background: red;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  right: 10px;
+}
+
+.quit:hover {
+  opacity: 0.8;
+}

@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 #highscoresList {
     list-style: none;
     padding-left: 0;
@@ -6,13 +10,18 @@
 
 .high-score {
     border: 1px solid #333;
-    padding: 5px 25px;
+    padding: 5px 50px;
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: white;
 }
 
 .high-score:hover {
-    transform: scale(1.25);
-    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transition: transform 150ms;
 }

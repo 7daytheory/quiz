@@ -1,2 +1,2 @@
 # multiplayerQuiz
-Online Multiplayer Quiz Game with Vue.js and Socket.io
+Online Multiplayer Quiz Gam using Javascript and css animations
