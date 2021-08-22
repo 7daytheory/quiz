@@ -18,6 +18,10 @@ h1 {
     margin-bottom: 1rem;
     text-decoration: none;
     background-color: white;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 
 .high-score:hover {
